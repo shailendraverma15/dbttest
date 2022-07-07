@@ -3,6 +3,4 @@
     database= 'PC_MATILLION_DB'
 )}}
 
-SELECT * FROM "PC_MATILLION_DB"."RAW"."ORDERS"
-
---shailendra
+SELECT * FROM {{ source('RAW', 'ORDERS') }}
